@@ -1,0 +1,38 @@
+## Syntax highlighting for JavaScript.
+
+## Author: Rangga Fajar Oktariansyah
+## GitHub: @FajarKim
+## License: AGPL version 3
+## Contributors: @FajarKim
+
+syntax javascript "\.(js|cjs|mjs)$"
+comment "//"
+
+# Declarational stuff.
+color green "\<(async|class|extends|function|this|typeof|void|super)\>"
+color brightcyan "\<(let|const|var)\>"
+# Flow control and special keywords.
+color brightyellow "\<(do|while|if|else|switch|case|default|for|each|in|of|with)\>"
+color brightyellow "\<(await|export|import|throw|try|catch|finally|new|delete|from)\>"
+# "Exit" points.
+color magenta "\<(break|continue|return|yield)\>"
+# Console statements.
+color magenta "console\.(log|error|warn|info)"
+
+# Octal/decimal and hexadecimal numbers.
+color cyan "\<([0-9]+|0x[[:xdigit:]]+)\>"
+# Special values.
+color cyan "\<(true|false|null|undefined)\>"
+
+# Strings.
+color blue "\<[A-Z][a-zA-Z0-9_]*\>"
+color normal "\<[A-Z][A-Z0-9_]*\>"
+color brightmagenta ""([^"\]|\\.)*"|'([^'\]|\\.)*'|`([^`\]|\\.)*`"
+# Comments.
+color brightblue "(^|[[:blank:]])//.*"
+color brightblue start="/\*" end="\*/"
+# "Error" keywords.
+color brightred "\<(Error|TypeError|ReferenceError|SyntaxError|URIError|EvalError|RangeError|InternalError)\>"
+
+# Trailing whitespace.
+color ,green "[[:space:]]+$"
