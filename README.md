@@ -32,7 +32,7 @@ The following is a screenshot of the JavaScript code edited with nano!
 <img src="https://c.top4top.io/p_2857e0vth1.png" width="100%" alt="Screenshots 2"/>
 
 ## License
-JavaScript Nanorc is released under the AGPL-v3 license, which grants the following permissions:
+JavaScript Nanorc is released under the AGPL-3.0 license, which grants the following permissions:
 - Commercial use
 - Distribution
 - Modification
